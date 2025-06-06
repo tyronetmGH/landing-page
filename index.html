@@ -6,69 +6,69 @@
         <title>Landing Page</title>
     </head>
     <body>
-        <div class="container dark">
-            <div class="header dark">
-                <div class="logo">Header Logo</div>
-                <ul class="links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+        <header class="header header--dark">
+            <div class="header__logo">Header Logo</div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">Home</a></li>
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
+        </header>
 
-            <div class="banner section dark"> 
-                <div class="hero">
-                    <div class="heading">This website is awesome</div>
-                    <div class="text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast </div>
-                    <button><a href="#">Sign Up</a></button>
-                </div>
-                <div class="right"><img src="images/600x400.svg"></div>
+        <section class="hero hero--dark"> 
+            <div class="hero__content">
+                <div class="hero__title">This website is awesome</div>
+                <div class="hero__description">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast </div>
+                <button>Sign Up</button>
             </div>
-        </div>
+            <div class="hero__image">
+                <img src="images/600x400.svg" alt="">
+            </div>
+        </section>
         
-        <div class="container section info">
-            <div class="heading">Some random information.</div>
-            <div class="images">
-                <div class="item">
-                    <img src="images/400x400.svg">
-                    <div class="text">this is some subtext under an illustration or image</div>
+        <section class="info">
+            <h2 class="info__title">Some random information.</h2>
+            <div class="info__grid">
+                <div class="info__item">
+                    <img class="info__image" src="images/400x400.svg" alt="">
+                    <p class="info_caption">this is some subtext under an illustration or image</p>
                 </div>
 
-                <div class="item">
-                    <img src="images/400x400.svg">
-                    <div class="text">this is some subtext under an illustration or image</div>
+                <div class="info__item">
+                    <img class="info__image" src="images/400x400.svg" alt="">
+                    <p class="info_caption">this is some subtext under an illustration or image</p>
                 </div>
 
-                <div class="item">
-                    <img src="images/400x400.svg">
-                    <div class="text">this is some subtext under an illustration or image</div>
+                <div class="info__item">
+                    <img class="info__image" src="images/400x400.svg" alt="">
+                    <p class="info_caption">this is some subtext under an illustration or image</p>
                 </div>
 
-                <div class="item">
-                    <img src="images/400x400.svg">
-                    <div class="text">this is some subtext under an illustration or image</div>
+                <div class="info__item">
+                    <img class="info__image" src="images/400x400.svg" alt="">
+                    <p class="info_caption">this is some subtext under an illustration or image</p>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div class="container section grey">
-            <div class="quote-block">
-                <div class="quote"><em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who know? All I know is that it looks nice. </em></div>
-                <div class="name">- Thor, God of Thunder</div>
-            </div>
-        </div>
+        <section class="testimonial">
+            <blockquote class="testimonial__quote">
+                <em>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who know? All I know is that it looks nice. </em>
+            </blockquote>
+            <cite class="testimonial__author">- Thor, God of Thunder</cite>
+        </section>
         
-        <div class="container section">
-            <div class="cta">
-                <div class="column">
-                    <div class="heading">Call to action! It's time!</div>
-                    <div class="text">Sign up for our product by clicking that button right over there! </div>
-                </div>
-                <button><a href="#">Sign Up</a></button>
+        <section class="cta">
+            <div class="cta__content">
+                <h2 class="cta__title">Call to action! It's time!</h2>
+                <p class="cta__description">Sign up for our product by clicking that button right over there!</p>
             </div>
-        </div>
-        <div class="footer dark">
-            <div class="copyright">Copyright © The Odin Project 2021</div>
-        </div>
+            <button class="cta__button">Sign Up</button>
+        </section>
+        <footer class="footer footer--dark">
+            <p class="footer__text">Copyright © The Odin Project 2021</p>
+        </footer>
     </body>
 </html>
