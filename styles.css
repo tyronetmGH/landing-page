@@ -13,11 +13,18 @@ body {
     flex-direction: column;
 }
 
-.container {
-    padding: 0 15vw;
+.header,
+.hero,
+.info,
+.testimonial,
+.cta {
+    padding: 0 20vw;
 }
 
-.section {
+.hero,
+.info,
+.testimonial,
+.cta {
     flex: 1;
     padding-bottom: 32px;
 }
@@ -30,49 +37,49 @@ body {
     padding-bottom: 120px;
 }
 
-.logo {
+.header__logo {
     font-size: 24px;
     color: #f9faf8;
-    font-weight: 700;;
+    font-weight: 700;
 }
 
-ul {
+.header__nav-list {
     list-style: none;
     display:flex;
     gap: 32px
 }
 
-a { 
+.header__nav-item > a { 
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.banner {
+.hero {
     display: flex;
     gap: 64px;
     padding-bottom: 120px;
 }
 
-.hero {
+.hero__content {
     flex: 1;
 }
 
-.hero .heading,
-.cta .heading {
+.hero__title,
+.cta__title {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
 }
 
-.hero .text,
-.cta .text,
-.copyright {
+.hero__description,
+.cta__description,
+.footer__text {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.hero .text {
+.hero__description {
     padding: 16px 0;
 }
 
@@ -82,17 +89,18 @@ button {
     border-radius: 8px;
 }
 
-.hero button {
+.hero__button {
     background: #3882F6;
-    width: 140px;
     border: 1px solid royalblue;
 }
 
-button a {
+button {
     color: #f9faf8;
+    padding: 8px 32px;
+    flex-shrink: 0
 }
 
-.right {
+.hero__image {
     background-color: grey;
     flex: 1;
     display: flex;
@@ -100,7 +108,7 @@ button a {
     align-items: center;
 }
 
-.right img{
+.hero__image img{
     width: 100px;
 }
 
@@ -109,7 +117,7 @@ button a {
     padding-bottom: 120px;
 }
 
-.info .heading {
+.info__title {
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
@@ -117,40 +125,40 @@ button a {
     padding-bottom: 56px;
 }
 
-.images {
+.info__grid {
     display:flex;
     justify-content: center;
     gap: 48px;
     flex-wrap: wrap;
 }
 
-.images img,
-.item {
+.info__grid img,
+.info__item {
     width: 175px;
     text-align: center;
 }
 
-.images img {
+.info__grid img {
     border: 4px solid #3882F6;
     border-radius: 16px;
     margin-bottom: 4px;
 }
 
-.quote-block {
+.testimonial {
     padding: 60px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 120px 80px;
+    padding: 120px 25vw;
 }
 
-.quote {
+.testimonial__quote {
     font-size: 36px;
     font-weight: 300;
     color: #1f2937;
 }
 
-.quote-block .name {
+.testimonial__author {
     align-self: flex-end;
     font-size: 30px;
     font-weight: 600;
@@ -161,20 +169,19 @@ button a {
     justify-content: space-between;
     align-items: center;
     padding: 60px 100px;
-    margin: 120px 0;
+    margin: 120px 20vw;
     border-radius: 8px;
-    gap: 8px
+    gap: 16px;
 }
 
-.cta .heading {
+.cta__title {
     font-size: 24px;
+    padding-bottom: 8px;
 }
 
-.cta button {
+.cta__button {
     background: #3882F6;
     border: 2px solid white;
-    padding: 8px 32px;
-    flex-shrink: 0
 }
 
 .footer {
@@ -185,11 +192,13 @@ button a {
 
 
 /* background colors */
-.dark {
+.header--dark,
+.hero--dark,
+.footer--dark {
     background-color: #1F2937;
 }
 
-.grey {
+.testimonial {
     background-color: #E5E7EB;
 }
 
