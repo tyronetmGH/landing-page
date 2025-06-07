@@ -19,14 +19,13 @@ body {
 .testimonial,
 .cta {
     padding: 0 20vw;
+    padding-bottom: 120px
 }
 
-.hero,
-.info,
-.testimonial,
-.cta {
-    flex: 1;
-    padding-bottom: 32px;
+.header--dark,
+.hero--dark,
+.footer--dark {
+    background-color: #1F2937;
 }
 
 .header {
@@ -56,9 +55,9 @@ body {
 }
 
 .hero {
+    flex: 1;
     display: flex;
     gap: 64px;
-    padding-bottom: 120px;
 }
 
 .hero__content {
@@ -85,19 +84,17 @@ body {
 
 button {
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 8px 32px;
     border-radius: 8px;
+    color: #f9faf8;
+    font-size: 16px;
+    font-weight: 700;
+    flex-shrink: 0
 }
 
 .hero__button {
     background: #3882F6;
     border: 1px solid royalblue;
-}
-
-button {
-    color: #f9faf8;
-    padding: 8px 32px;
-    flex-shrink: 0
 }
 
 .hero__image {
@@ -113,8 +110,8 @@ button {
 }
 
 .info {
+    flex: 1;
     padding-top: 56px;
-    padding-bottom: 120px;
 }
 
 .info__title {
@@ -136,6 +133,7 @@ button {
 .info__item {
     width: 175px;
     text-align: center;
+    color: #59595a;;
 }
 
 .info__grid img {
@@ -145,6 +143,8 @@ button {
 }
 
 .testimonial {
+    flex: 1;
+    background-color: #E5E7EB;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -165,6 +165,8 @@ button {
 }
 
 .cta {
+    flex: 1;
+    background-color: #3882F6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,20 +190,4 @@ button {
     align-items: center;
     text-align: center;
     padding: 32px;
-}
-
-
-/* background colors */
-.header--dark,
-.hero--dark,
-.footer--dark {
-    background-color: #1F2937;
-}
-
-.testimonial {
-    background-color: #E5E7EB;
-}
-
-.cta {
-    background-color: #3882F6
 }
